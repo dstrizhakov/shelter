@@ -188,6 +188,23 @@ h6 {
   border: 1px solid #fddcc4;
 }
 
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact span {
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 6%;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #f1cdb3;
+  margin-left: 20px;
+}
+
 .header {
   padding: 30px 0;
   display: -webkit-box;
@@ -235,8 +252,17 @@ h6 {
 .menu__link {
   padding: 7px 0;
   position: relative;
+  color: #cdcdcd;
+  -webkit-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
 }
-.menu__link::after {
+.menu__link.active {
+  color: #fafafa;
+}
+.menu__link:hover {
+  color: #fafafa;
+}
+.menu__link.active::after, .menu__link::after {
   content: "";
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
@@ -249,9 +275,68 @@ h6 {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-.menu__link:hover::after {
+.menu__link.active::after, .menu__link:hover::after {
   width: 100%;
   left: 0;
+}
+
+.footer {
+  background: url("../img/home/noise.png") repeat, radial-gradient(farthest-corner at left top, #5B483A, #262425);
+  color: #ffffff;
+}
+.footer__body {
+  margin-top: 40px;
+}
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.footer__contacts {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 310px;
+          flex: 0 0 310px;
+}
+.footer__address {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 310px;
+          flex: 0 0 310px;
+}
+.contacts-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contacts-footer__title {
+  color: #ffffff;
+}
+.contacts-footer__contact {
+  margin-top: 40px;
+}
+
+.address-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.address-footer__title {
+  color: #ffffff;
+}
+.address-footer__contact {
+  margin-top: 40px;
 }
 
 .top {

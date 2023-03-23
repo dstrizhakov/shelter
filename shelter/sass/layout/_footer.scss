@@ -1,0 +1,48 @@
+.footer {
+	background: url("../img/home/noise.png") repeat, radial-gradient(farthest-corner at left top, #5B483A, #262425);
+	color: $lightColor;
+
+	&__body {
+	margin-top: 40px;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__contacts {
+		flex: 0 0 310px;
+	}
+
+	&__address {
+		flex: 0 0 310px;
+	}
+
+	&__image {
+	}
+}
+.contacts-footer {
+	display: flex;
+	flex-direction: column;
+	&__title {
+		color: #ffffff;
+	}
+
+	&__contact {
+		margin-top: 40px;
+	}
+}
+.address-footer {
+	display: flex;
+	flex-direction: column;
+
+	&__title {
+		color: #ffffff;
+	}
+
+	&__contact {
+		margin-top: 40px;
+	}
+}
