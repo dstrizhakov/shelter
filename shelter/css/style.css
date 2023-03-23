@@ -333,12 +333,22 @@ h6 {
 .our-friends {
   background-color: #F6F6F6;
 }
+.our-friends__body {
+  margin: 80px 0 100px 0;
+}
 .our-friends__title {
-  margin-top: 80px;
   text-align: center;
 }
 .our-friends__slider {
   margin: 60px 0;
+}
+.our-friends__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slider-friends__body {
@@ -397,4 +407,5 @@ h6 {
 }
 .item-slider__button {
   margin-bottom: 30px;
+  background-color: transparent;
 }
