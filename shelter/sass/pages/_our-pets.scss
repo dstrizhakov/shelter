@@ -1,0 +1,98 @@
+.wrapper {
+
+	&__container {
+		width: 100%;
+	}
+}
+// ================= переписывем некоторые стили header ================
+.header {
+	&__logo {
+		& span:first-child {
+			color: #545454;
+		}
+		& span:last-child {
+			color: #292929
+		}
+	}
+}
+
+.menu {
+
+	&__link {
+		color: #545454;
+		&.active{
+			color: #292929;
+		}
+		&:hover {
+			color: #292929;
+		}
+	}
+}
+
+//====================Friends ====================
+
+.friends {
+background-color: #f6f6f6;
+	&__body {
+		margin: 80px 0 100px 0;
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 45px;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;;
+		flex-wrap: wrap;
+		gap: 40px;
+	}
+
+	&__item {
+	}
+
+	&__actions {
+	}
+}
+
+
+.paginator {
+margin-top: 45px;
+	&__body {
+		display: flex;
+		gap: 20px;
+		justify-content: center;
+	}
+
+	&__item {
+		font-family: Georgia, "Times New Roman", serif;
+		font-size: 20px;
+		letter-spacing: 0.06em;
+		border-radius: 50%;
+		border: 2px solid $primaryColor;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50px;
+		width: 50px;
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+		&.active {
+			background-color: $primaryColor;
+		}
+		&:hover {
+			background-color: $primaryLightColor;
+			border: 2px solid $primaryLightColor;
+		}
+		&.unactive {
+			background-color: transparent;
+			border: 2px solid #cdcdcd;
+			color: #cdcdcd;
+		}
+	}
+}
+
+
+
+

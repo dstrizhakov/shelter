@@ -359,186 +359,66 @@ h6 {
   margin-top: 40px;
 }
 
-.top {
-  background: url("../img/home/noise.png") repeat, radial-gradient(farthest-corner at left top, #5B483A, #262425);
-  color: #ffffff;
-}
-
-.not-only {
-  margin-top: 70px;
-}
-.not-only__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.not-only__content {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 460px;
-          flex: 0 0 460px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-}
-.not-only__title {
-  color: #ffffff;
-  font-size: 44px;
-  margin-bottom: 42px;
-}
-.not-only__text {
-  margin-bottom: 42px;
-  color: #cdcdcd;
-  line-height: 24px;
-}
-.about__body {
-  margin-top: 80px;
-  margin-bottom: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.about__content {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 430px;
-          flex: 0 0 430px;
-  margin-left: 120px;
-}
-.about__content p {
-  line-height: 24px;
-}
-.about__content p:not(:last-child) {
-  margin-bottom: 25px;
-}
-.about__title {
-  margin-bottom: 25px;
-}
-
-.our-friends {
-  background-color: #F6F6F6;
-}
-.our-friends__body {
-  margin: 80px 0 100px 0;
-}
-.our-friends__title {
-  text-align: center;
-}
-.our-friends__slider {
-  margin: 60px 0;
-}
-.our-friends__actions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.slider-friends__body {
-  position: relative;
-}
-.slider-friends__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 90px;
-}
-.slider-friends__controls {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: absolute;
+.wrapper__container {
   width: 100%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-.slider-friends__arrow-right img {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
-.help__body {
+.header__logo span:first-child {
+  color: #545454;
+}
+.header__logo span:last-child {
+  color: #292929;
+}
+
+.menu__link {
+  color: #545454;
+}
+.menu__link.active {
+  color: #292929;
+}
+.menu__link:hover {
+  color: #292929;
+}
+
+.friends {
+  background-color: #f6f6f6;
+}
+.friends__body {
   margin: 80px 0 100px 0;
 }
-.help__title {
+.friends__title {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
-.help__row {
+.friends__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 120px;
-     -moz-column-gap: 120px;
-          column-gap: 120px;
-  row-gap: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  gap: 40px;
+}
+.paginator {
+  margin-top: 45px;
+}
+.paginator__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-.item-help {
-  min-width: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.item-help img {
-  width: 60px;
-  height: 60px;
-}
-.item-help__text {
-  margin-top: 30px;
+.paginator__item {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 20px;
-  line-height: 115%;
-}
-
-.donation {
-  background-color: #F6F6F6;
-}
-.donation__body {
-  margin: 80px 0 100px 0;
+  letter-spacing: 0.06em;
+  border-radius: 50%;
+  border: 2px solid #f1cdb3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,42 +428,21 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
-.donation__content {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 380px;
-          flex: 0 0 380px;
-  margin-left: 30px;
-}
-.donation__title {
-  margin-bottom: 20px;
-}
-.donation__card-name {
-  font-family: Georgia, "Times New Roman", serif;
-  margin-bottom: 20px;
-}
-.donation__card-number {
-  margin-bottom: 20px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+.paginator__item.active {
   background-color: #f1cdb3;
-  border-radius: 9px;
-  padding: 10px 15px;
 }
-.donation__card-number span {
-  font-family: Georgia, "Times New Roman", serif;
-  margin-left: 15px;
-  font-size: 20px;
+.paginator__item:hover {
+  background-color: #fddcc4;
+  border: 2px solid #fddcc4;
 }
-.donation__legal {
-  font-size: 12px;
-  font-style: italic;
-  color: #b2b2b2;
+.paginator__item.unactive {
+  background-color: transparent;
+  border: 2px solid #cdcdcd;
+  color: #cdcdcd;
 }

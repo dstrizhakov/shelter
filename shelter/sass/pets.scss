@@ -19,9 +19,9 @@ $lightGreyColor: #cdcdcd;
 // Минимальная ширина страницы
 $minWidth: 320;
 // Ширина полотна (макета)
-$maxWidth: 1280;
+$maxWidth: 1920;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1200;
+$maxWidthContainer: 1280;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
 $containerPadding: 30;
@@ -92,4 +92,4 @@ body {
 @import "./components/common";
 @import "./layout/header";
 @import "./layout/footer";
-@import "./pages/home";
+@import "./pages/our-pets";
