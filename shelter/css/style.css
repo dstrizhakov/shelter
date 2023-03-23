@@ -28,7 +28,7 @@ body {
 }
 
 body {
-  color: #0e0e0e;
+  color: #4c4c4c;
   line-height: 1;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 0.9375rem;
@@ -232,11 +232,13 @@ h6 {
 }
 
 .top {
-  min-height: 70vh;
   background: url("../img/home/noise.png") repeat, radial-gradient(farthest-corner at left top, #5B483A, #262425);
   color: #ffffff;
 }
 
+.not-only {
+  margin-top: 70px;
+}
 .not-only__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,4 +277,32 @@ h6 {
   margin-bottom: 42px;
   color: #cdcdcd;
   line-height: 24px;
+}
+.about__body {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 430px;
+          flex: 0 0 430px;
+  margin-left: 120px;
+}
+.about__content p {
+  line-height: 24px;
+}
+.about__content p:not(:last-child) {
+  margin-bottom: 25px;
+}
+.about__title {
+  margin-bottom: 25px;
 }
