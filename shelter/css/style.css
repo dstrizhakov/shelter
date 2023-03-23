@@ -409,3 +409,51 @@ h6 {
   margin-bottom: 30px;
   background-color: transparent;
 }
+
+.help__body {
+  margin: 80px 0 100px 0;
+}
+.help__title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.help__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 120px;
+     -moz-column-gap: 120px;
+          column-gap: 120px;
+  row-gap: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.item-help {
+  min-width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.item-help img {
+  width: 60px;
+  height: 60px;
+}
+.item-help__text {
+  margin-top: 30px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 115%;
+}
