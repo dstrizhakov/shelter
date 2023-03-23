@@ -165,6 +165,29 @@ h6 {
   color: #545454;
 }
 
+.arrow {
+  border-radius: 50%;
+  border: 1px solid #f1cdb3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.arrow:hover {
+  background-color: #fddcc4;
+  border: 1px solid #fddcc4;
+}
+
 .header {
   padding: 30px 0;
   display: -webkit-box;
@@ -305,4 +328,73 @@ h6 {
 }
 .about__title {
   margin-bottom: 25px;
+}
+
+.our-friends {
+  background-color: #F6F6F6;
+}
+.our-friends__title {
+  margin-top: 80px;
+  text-align: center;
+}
+.our-friends__slider {
+  margin: 60px 0;
+}
+
+.slider-friends__body {
+  position: relative;
+}
+.slider-friends__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 90px;
+}
+.slider-friends__item {
+  background-color: #FAFAFA;
+  border-radius: 9px;
+  overflow: hidden;
+}
+.slider-friends__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.slider-friends__arrow-right img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.item-slider {
+  cursor: pointer;
+}
+.item-slider__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+.item-slider__title {
+  font-size: 20px;
+}
+.item-slider__button {
+  margin-bottom: 30px;
 }

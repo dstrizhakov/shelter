@@ -24,3 +24,19 @@
 	letter-spacing: 6%;
 	color: $titleGrayColor;
 }
+
+.arrow {
+	border-radius: 50%;
+	border: 1px solid $primaryColor;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		background-color: $primaryLightColor;
+		border: 1px solid $primaryLightColor;
+	}
+}
