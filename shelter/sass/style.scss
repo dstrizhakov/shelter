@@ -10,7 +10,10 @@ $fontSize: rem(15); // где 15(px) - размер шрифта по умолч
 // Основные цвета
 $mainColor: #0e0e0e; // Цвет шрифта по умолчанию
 $lightColor: #ffffff;
-$logoPrimaryColor: #f1cdb3;
+$primaryColor: #f1cdb3;
+$primaryLightColor: #fddcc4;
+$titleGrayColor: #545454;
+$lightGreyColor: #cdcdcd;
 
 // НАСТРОЙКИ ===============================================================================================================================================================================================================================================================================================
 // Минимальная ширина страницы
@@ -84,7 +87,7 @@ body {
 		}
 	}
 }
-
+@import "./components/common";
 @import "./layout/header";
 @import "./layout/footer";
-@import "./pages/home"
+@import "./pages/home";

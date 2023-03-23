@@ -1,7 +1,41 @@
 .top {
 	min-height: 70vh;
 	background: url("../img/home/noise.png") repeat, radial-gradient(farthest-corner at left top, #5B483A, #262425);
-
-
 	color: $lightColor;
 }
+
+.not-only {
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__content {
+		flex: 0 0 460px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+	}
+
+	&__title {
+		color: $lightColor;
+		font-size: 44px;
+		margin-bottom: 42px;
+	}
+
+	&__text {
+		margin-bottom: 42px;
+		color: $lightGreyColor;
+		line-height: 24px;
+	}
+
+	&__button {
+	}
+
+	&__image {
+	}
+}
+
