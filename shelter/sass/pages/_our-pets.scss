@@ -26,6 +26,9 @@
 		&:hover {
 			color: #292929;
 		}
+		&:active {
+			color: $primaryLightColor;
+		}
 	}
 }
 
@@ -85,6 +88,10 @@ margin-top: 60px;
 		&:hover {
 			background-color: $primaryLightColor;
 			border: 2px solid $primaryLightColor;
+		}
+		&:active {
+				background-color: lighten($color: $primaryLightColor, $amount: 5%);
+				border: 2px solid lighten($color: $primaryLightColor, $amount: 5%);
 		}
 		&.unactive {
 			background-color: transparent;

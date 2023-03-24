@@ -220,6 +220,13 @@ position: relative;
 		background-color: $primaryColor;
 		border-radius: 9px;
 		padding: 10px 15px;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			background-color: $primaryLightColor;
+		}
+		&:active {
+			background-color: lighten($color: $primaryLightColor, $amount: 5%);
+		}
 		& span {
 			font-family: Georgia, "Times New Roman", serif;
 			margin-left: 15px;

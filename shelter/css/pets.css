@@ -145,6 +145,10 @@ h6 {
   background-color: #fddcc4;
   border: 1px solid #fddcc4;
 }
+.button:active {
+  background-color: #feebdd;
+  border: 1px solid #feebdd;
+}
 
 .title {
   font-family: Georgia, "Times New Roman", serif;
@@ -159,6 +163,20 @@ h6 {
   background-color: #FAFAFA;
   border-radius: 9px;
   overflow: hidden;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.item-slider:hover {
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+.item-slider:active {
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 .item-slider__body {
   display: -webkit-box;
@@ -204,6 +222,10 @@ h6 {
   background-color: #fddcc4;
   border: 1px solid #fddcc4;
 }
+.arrow:active {
+  background-color: #feebdd;
+  border: 1px solid #feebdd;
+}
 
 .contact {
   display: -webkit-box;
@@ -225,6 +247,9 @@ h6 {
 }
 .contact:hover span {
   color: #fddcc4;
+}
+.contact:active span {
+  color: #feebdd;
 }
 
 .header {
@@ -307,6 +332,9 @@ h6 {
 .menu__link.active::after, .menu__link:hover::after {
   width: 100%;
   left: 0;
+}
+.menu__link:active {
+  color: #fddcc4;
 }
 
 .footer {
@@ -391,6 +419,9 @@ h6 {
 .menu__link:hover {
   color: #292929;
 }
+.menu__link:active {
+  color: #fddcc4;
+}
 
 .friends {
   background-color: #f6f6f6;
@@ -455,6 +486,10 @@ h6 {
 .paginator__item:hover {
   background-color: #fddcc4;
   border: 2px solid #fddcc4;
+}
+.paginator__item:active {
+  background-color: #feebdd;
+  border: 2px solid #feebdd;
 }
 .paginator__item.unactive {
   background-color: transparent;
