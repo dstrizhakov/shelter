@@ -49,13 +49,11 @@
 		padding: 7px 0;
 		letter-spacing: 0.17px;
 		position: relative;
-		color: #cdcdcd;
+		color: $lightGrayColor;
 		transition: color 0.3s ease 0s;
-		&.active{
-			color: #fafafa;
-		}
+	
 		&:hover {
-			color: #fafafa;
+			color: $cardsBackgroundColor;
 		}
 		&.active::after,
 		&::after{
@@ -75,7 +73,14 @@
 			left: 0; 
 		}
 		&:active {
-			color: $primaryLightColor;
+			color: $cardsBackgroundColor;
+		}
+		&:active::after {
+			width: 100%; 
+			left: 0; 
+		}
+		&.active{
+			color: $lightGrayColor;
 		}
 	}
 }

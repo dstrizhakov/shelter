@@ -32,7 +32,7 @@ margin-top: 60px;
 
 	&__text {
 		margin-bottom: 42px;
-		color: $lightGreyColor;
+		color: $lightGrayColor;
 		line-height: 24px;
 	}
 
@@ -77,7 +77,7 @@ margin-top: 60px;
 //==================OUR FRIENDS===================
 
 .our-friends {
-	background-color: #F6F6F6;
+	background-color: $backgroundSecondaryColor;
 	&__body {
 		margin: 80px 0 100px 0;
 	}
@@ -182,16 +182,13 @@ position: relative;
 //====================DONATION===================
 
 .donation {
-	background-color: #F6F6F6;
+	background-color: $backgroundSecondaryColor;
 
 	&__body {
 		margin: 80px 0 100px 0;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
-
-	&__image {
 	}
 
 	&__content {
