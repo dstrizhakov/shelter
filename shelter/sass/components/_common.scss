@@ -7,8 +7,9 @@
 	border: 1px solid $primaryColor;
 	color: #292929;
 	font-size: 17px;
-	height: 50px;
+	height: 52px;
 	padding: 15px 45px;
+	letter-spacing: 1px;
 	border-radius: 30px;
 	transition: all 0.3s ease 0s;
 	&:hover {
@@ -21,7 +22,7 @@
 	font-family: Georgia, "Times New Roman", serif;
 	font-size: 35px;
 	line-height: 130%;
-	letter-spacing: 6%;
+	letter-spacing: 2px;
 	color: $titleGrayColor;
 }
 
@@ -35,7 +36,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 30px;
+		gap: 29px;
 	}
 
 	&__image {
@@ -43,6 +44,7 @@
 
 	&__title {
 		font-size: 20px;
+		letter-spacing: 0.8px;
 	}
 
 	&__button {
@@ -73,7 +75,7 @@
 	& span {
 		font-size: 20px;
 		line-height: 115%;
-		letter-spacing: 6%;
+		letter-spacing: 1.2px;
 		font-family: Georgia, "Times New Roman", serif;
 		color: $primaryColor;
 		margin-left: 20px;
@@ -82,8 +84,4 @@
 	&:hover span {
 		color: $primaryLightColor;
 	}
-}
-.unactive {
-}
-.active {
 }

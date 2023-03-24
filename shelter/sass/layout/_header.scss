@@ -11,13 +11,12 @@
 			font-family: Georgia, "Times New Roman", serif;
 			font-size: 32px;
 			line-height: 110%;
-			letter-spacing: 6%;
 			color: $primaryColor;
 		}
 		& span:last-child {
 			margin-top: 10px;
 			font-size: 13px;
-			letter-spacing: 0.4px;
+	
 		}
 	}
 
@@ -27,24 +26,28 @@
 .logo {
 
 	&__name {
+		letter-spacing: 2px;
 	}
 
 	&__text {
+		letter-spacing: 1.3px;
 	}
 }
 .menu {
 
 	&__list {
 		display: flex;
+		margin-bottom: 5px;
 	}
 
 
 	&__item {
-		margin-left: 15px;
+		margin-left: 34px;
 	}
 
 	&__link {
 		padding: 7px 0;
+		letter-spacing: 0.17px;
 		position: relative;
 		color: #cdcdcd;
 		transition: color 0.3s ease 0s;

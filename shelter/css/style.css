@@ -134,8 +134,9 @@ h6 {
   border: 1px solid #f1cdb3;
   color: #292929;
   font-size: 17px;
-  height: 50px;
+  height: 52px;
   padding: 15px 45px;
+  letter-spacing: 1px;
   border-radius: 30px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -149,7 +150,7 @@ h6 {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 35px;
   line-height: 130%;
-  letter-spacing: 6%;
+  letter-spacing: 2px;
   color: #545454;
 }
 
@@ -170,10 +171,11 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
+  gap: 29px;
 }
 .item-slider__title {
   font-size: 20px;
+  letter-spacing: 0.8px;
 }
 .item-slider__button {
   margin-bottom: 30px;
@@ -214,7 +216,7 @@ h6 {
 .contact span {
   font-size: 20px;
   line-height: 115%;
-  letter-spacing: 6%;
+  letter-spacing: 1.2px;
   font-family: Georgia, "Times New Roman", serif;
   color: #f1cdb3;
   margin-left: 20px;
@@ -253,24 +255,31 @@ h6 {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 32px;
   line-height: 110%;
-  letter-spacing: 6%;
   color: #f1cdb3;
 }
 .header__logo span:last-child {
   margin-top: 10px;
   font-size: 13px;
-  letter-spacing: 0.4px;
 }
+.logo__name {
+  letter-spacing: 2px;
+}
+.logo__text {
+  letter-spacing: 1.3px;
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 5px;
 }
 .menu__item {
-  margin-left: 15px;
+  margin-left: 34px;
 }
 .menu__link {
   padding: 7px 0;
+  letter-spacing: 0.17px;
   position: relative;
   color: #cdcdcd;
   -webkit-transition: color 0.3s ease 0s;
@@ -301,7 +310,7 @@ h6 {
 }
 
 .footer {
-  background: url("../img/home/noise.png") repeat, radial-gradient(farthest-corner at left top, #5B483A, #262425);
+  background: url("../img/home/noise.png") repeat, radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
   color: #ffffff;
 }
 .footer__body {
@@ -328,6 +337,7 @@ h6 {
           flex: 0 0 310px;
 }
 .contacts-footer {
+  margin-top: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,6 +354,8 @@ h6 {
 }
 
 .address-footer {
+  margin-left: -18px;
+  margin-top: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,16 +368,16 @@ h6 {
   color: #ffffff;
 }
 .address-footer__contact {
-  margin-top: 40px;
+  margin-top: 32px;
 }
 
 .top {
-  background: url("../img/home/noise.png") repeat, radial-gradient(farthest-corner at left top, #5B483A, #262425);
+  background: url("../img/home/noise.png") repeat, radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
   color: #ffffff;
 }
 
 .not-only {
-  margin-top: 70px;
+  margin-top: 60px;
 }
 .not-only__body {
   display: -webkit-box;
@@ -374,11 +386,12 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .not-only__content {
+  margin-bottom: 242px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 460px;
           flex: 0 0 460px;
@@ -400,6 +413,7 @@ h6 {
   color: #ffffff;
   font-size: 44px;
   margin-bottom: 42px;
+  letter-spacing: 0.1px;
 }
 .not-only__text {
   margin-bottom: 42px;
@@ -500,18 +514,14 @@ h6 {
   -webkit-column-gap: 120px;
      -moz-column-gap: 120px;
           column-gap: 120px;
-  row-gap: 50px;
+  row-gap: 55px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 .item-help {
-  min-width: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,6 +542,7 @@ h6 {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 20px;
   line-height: 115%;
+  letter-spacing: 1.2px;
 }
 
 .donation {
@@ -561,6 +572,7 @@ h6 {
 .donation__card-name {
   font-family: Georgia, "Times New Roman", serif;
   margin-bottom: 20px;
+  letter-spacing: 0.9px;
 }
 .donation__card-number {
   margin-bottom: 20px;
@@ -581,9 +593,11 @@ h6 {
   font-family: Georgia, "Times New Roman", serif;
   margin-left: 15px;
   font-size: 20px;
+  letter-spacing: 1.2px;
 }
 .donation__legal {
   font-size: 12px;
+  line-height: 150%;
   font-style: italic;
   color: #b2b2b2;
 }

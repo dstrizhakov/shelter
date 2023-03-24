@@ -1,19 +1,21 @@
 .top {
-	background: url("../img/home/noise.png") repeat, radial-gradient(farthest-corner at left top, #5B483A, #262425);
+	background: url("../img/home/noise.png") repeat, radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
 	color: $lightColor;
 }
 
 //==================NOT ONLY===================
 
 .not-only {
-margin-top: 70px;
+margin-top: 60px;
+// margin-bottom: 40px;
 	&__body {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items: flex-end;
 	}
 
 	&__content {
+		margin-bottom: 242px;
 		flex: 0 0 460px;
 		display: flex;
 		flex-direction: column;
@@ -25,6 +27,7 @@ margin-top: 70px;
 		color: $lightColor;
 		font-size: 44px;
 		margin-bottom: 42px;
+		letter-spacing: 0.1px;
 	}
 
 	&__text {
@@ -132,8 +135,6 @@ position: relative;
 
 .help {
 
-	&__container {
-	}
 
 	&__body {
 		margin: 80px 0 100px 0;
@@ -150,21 +151,17 @@ position: relative;
 	&__row {
 		display: flex;
 		column-gap: 120px;
-		row-gap: 50px;
+		row-gap: 55px;
 		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
-
-		// display: grid;
-		// grid-template-columns: repeat(5, 1fr);
-		// grid-auto-flow: row dense;
+		justify-content:center;
 	}
 
 	&__item {
+	
 	}
 }
 .item-help {
-	min-width: 150px;
+	// min-width: 120px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -178,6 +175,7 @@ position: relative;
 		font-family: Georgia, "Times New Roman", serif;
 		font-size: 20px;
 		line-height: 115%;
+		letter-spacing: 1.2px;
 	}
 }
 
@@ -211,6 +209,7 @@ position: relative;
 	&__card-name {
 		font-family: Georgia, "Times New Roman", serif;
 		margin-bottom: 20px;
+		letter-spacing: 0.9px;
 	}
 
 	&__card-number {
@@ -225,11 +224,13 @@ position: relative;
 			font-family: Georgia, "Times New Roman", serif;
 			margin-left: 15px;
 			font-size: 20px;
+			letter-spacing: 1.2px;
 		}
 	}
 
 	&__legal {
 		font-size: 12px;
+		line-height: 150%;
 		font-style: italic;
 		color: #b2b2b2;
 	}
