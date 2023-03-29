@@ -340,6 +340,7 @@ h6 {
   left: 0;
 }
 .menu__link.active {
+  pointer-events: none;
   color: #cdcdcd;
 }
 

@@ -80,6 +80,7 @@
 			left: 0; 
 		}
 		&.active{
+			pointer-events: none;
 			color: $lightGrayColor;
 		}
 	}
