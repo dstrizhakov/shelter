@@ -157,6 +157,13 @@ h6 {
   letter-spacing: 2px;
   color: #545454;
 }
+@media (max-width: 570px) {
+  .title {
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+}
 
 .item-slider {
   cursor: pointer;
@@ -266,6 +273,11 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 47.99875em) {
+  .header {
+    padding: 30px 10px;
+  }
+}
 .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,6 +312,11 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 5px;
+}
+@media (max-width: 47.99875em) {
+  .menu__list {
+    display: none;
+  }
 }
 .menu__item {
   margin-left: 34px;
@@ -344,12 +361,68 @@ h6 {
   color: #cdcdcd;
 }
 
+.icon-menu {
+  display: none;
+}
+@media (max-width: 47.99875em) {
+  .icon-menu {
+    display: block;
+    position: relative;
+    width: 1.875rem;
+    height: 1.375rem;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .icon-menu span, .icon-menu::before, .icon-menu::after {
+    content: "";
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 0.125rem;
+    background-color: #f1cdb3;
+  }
+  .icon-menu::before {
+    top: 0;
+  }
+  .icon-menu::after {
+    bottom: 0;
+  }
+  .icon-menu span {
+    top: calc(50% - 0.0625rem);
+  }
+  .menu-open .icon-menu span {
+    width: 0;
+  }
+  .menu-open .icon-menu::before {
+    top: calc(50% - 0.0625rem);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .menu-open .icon-menu::after {
+    bottom: calc(50% - 0.0625rem);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
 .footer {
   background: url("../img/home/noise.png") repeat, radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
   color: #ffffff;
 }
 .footer__body {
   margin-top: 40px;
+}
+@media (max-width: 61.99875em) {
+  .footer__body {
+    margin-top: 13px;
+  }
+}
+@media (max-width: 570px) {
+  .footer__body {
+    padding: 0 10px;
+  }
 }
 .footer__content {
   display: -webkit-box;
@@ -361,6 +434,30 @@ h6 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media (max-width: 61.99875em) {
+  .footer__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    -webkit-column-gap: 70px;
+       -moz-column-gap: 70px;
+            column-gap: 70px;
+    row-gap: 5px;
+    padding: 0 32px;
+  }
+}
+@media (max-width: 570px) {
+  .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .footer__contacts {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 310px;
@@ -371,6 +468,23 @@ h6 {
       -ms-flex: 0 0 310px;
           flex: 0 0 310px;
 }
+@media (max-width: 61.99875em) {
+  .footer__image {
+    grid-column: 1/span 2;
+    text-align: center;
+  }
+}
+@media (max-width: 570px) {
+  .footer__image {
+    margin-top: 37px;
+  }
+}
+@media (max-width: 570px) {
+  .footer__image img {
+    max-height: 265px;
+  }
+}
+
 .contacts-footer {
   margin-top: 18px;
   display: -webkit-box;
@@ -381,8 +495,20 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media (max-width: 570px) {
+  .contacts-footer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .contacts-footer__title {
   color: #ffffff;
+}
+@media (max-width: 570px) {
+  .contacts-footer__title {
+    letter-spacing: 1.4px;
+  }
 }
 .contacts-footer__contact {
   margin-top: 40px;
@@ -399,11 +525,34 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media (max-width: 570px) {
+  .address-footer {
+    margin-top: 35px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 0;
+  }
+}
 .address-footer__title {
   color: #ffffff;
 }
+@media (max-width: 570px) {
+  .address-footer__title {
+    margin: 0 30px;
+    margin-bottom: 42px;
+    margin-bottom: 5px;
+    letter-spacing: 1.4px;
+  }
+}
 .address-footer__contact {
   margin-top: 32px;
+}
+@media (max-width: 570px) {
+  .address-footer__contact {
+    padding-left: 5px;
+    margin-top: 36px;
+  }
 }
 
 .wrapper__container {
