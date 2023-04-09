@@ -36,22 +36,28 @@ body {
 		content: '';
 		position: absolute;
 		top: 0;
-		left: 0;
+		right: -100%;
 		width: 100vw;
 		height: 100vh;
 		background-color: rgba(41, 41, 41, 0.6);
 		opacity: 0;
-		transition: all 1s ease 0s;
+		transition: all 0.3s ease 0s;
 	}
 }
 body._lock {
 	overflow: hidden;
 	touch-action: none;
 	position: relative;
-	
 	&::before {
+		content: '';
+		right: 0;
 		opacity: 1;
 	}
+}
+body._locked {
+	overflow: hidden;
+	touch-action: none;
+	position: relative;
 }
 input,
 button,

@@ -89,47 +89,125 @@ const slides = [
   }
 ]
 
+const shuffleSlides = array => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+};
+
+const modalWrapper = document.getElementById('modal-slider')
+const bodyEl = document.body
+
 const createCard = (data) => {
 const item = document.createElement('div');
 item.classList.add('slider-friends__item');
 item.classList.add('item-slider');
-const cart =`<div class="slider-friends__item item-slider">
-<div class="item-slider__body">
+const cart =`<div class="item-slider__body">
 	<div class="item-slider__image">
 		<img src=${data.img} alt=${data.name}>
 	</div>
 	<h4 class="item-slider__title title">${data.name}</h4>
 	<a href="#" class="item-slider__button button">Learn more</a>
-</div>
 </div>`
 item.innerHTML = cart;
+item.addEventListener('click', function () {
+	modalWrapper.innerHTML = '';
+	modalElement = createModal(data);
+	modalWrapper.append(modalElement);
+	document.body.classList.add('_locked');
+	modalWrapper.classList.add('modal-active');
+})
 return item;
 }
 
+const createModal = (data) => {
+	const modal = document.createElement('div');
+	modal.classList.add('modal__body');
+	const close = document.createElement('div')
+	close.classList.add('modal__close');
+	close.innerHTML = `<img src="./img/close.svg" alt="close">`
+	close.addEventListener('click', function(){
+		document.body.classList.remove('_locked');
+		modalWrapper.classList.remove('modal-active')
+		modalWrapper.innerHTML = '';
+	})
+	const content = `<div class="modal__row">
+		<div class="modal__img">
+			<img src=${data.img} alt=${data.name}>
+		</div>
+		<div class="modal__content">
+			<h3>${data.name}</h3>
+			<h4>${data.breed}</h4>
+			<p>${data.description}</p>
+			<ul>
+				<li><span>Age:</span>${data.age}</li>
+				<li><span>Inoculations:</span>${data.inoculations[0]}</li>
+				<li><span>Diseases:</span>${data.diseases[0]}</li>
+				<li><span>Parasites:</span>${data.parasites[0]}</li>
+			</ul>
+		</div>
+	</div>`
+
+	modal.append(close);
+	modal.insertAdjacentHTML('beforeend', content);
+	return modal;
+};
+
 const slider = document.getElementById('slider-friends')
 const controls = slider.querySelector('.slider-friends__controls')
-const next = slider.querySelector('.slider-friends__arrow-right')
-const prev = slider.querySelector('.slider-friends__arrow-left')
 const viewport = slider.querySelector('.slider-friends__row')
 
 if (slider) {
 	//определяем начальный набор слайдов
-	const initialSlides = [slides[0], slides[1], slides[2]];
+	let shuffled = shuffleSlides(slides);
+	const initialSlides = [shuffled[0], shuffled[1], shuffled[2]];
 	initialSlides.forEach(slide => {
 		const slideCard = createCard(slide);
 		viewport.append(slideCard);
 	});
+	//определяем индекс
+	let i = 0
+	let max = 1;
 	//вешаем слушатель на кнопки вправо влево
 	controls.addEventListener('click', function(e){
 		if (e.target.closest('.slider-friends__arrow-right')) {
-			console.log('Клик ВПРАВО')
-			console.log(createCard(slides[0]))
-			viewport.innerHTML = '';
+			if ( i >= max ){ 
+				shuffled = shuffleSlides(slides);
+				i = 0;
+			 }
+			 viewport.classList.add('opacity-on');
+				setTimeout(() => {
+					const nextSlides = [shuffled[3], shuffled[4], shuffled[5]];
+					viewport.innerHTML = '';
+					nextSlides.forEach(slide => {
+						const slideCard = createCard(slide);
+						viewport.append(slideCard);
+					});
+				}, 200);
+				setTimeout(() => {
+					viewport.classList.remove('opacity-on')
+				}, 500);
+			i++;
 		} else if (e.target.closest('.slider-friends__arrow-left')) {
-			console.log('Клик ВЛЕВО')
-			const slide = createCard(slides[0]);
-			viewport.append(slide);
-	
+			if ( i <= 0 ){ 
+				shuffled = shuffleSlides(slides);
+				i = 0;
+			 }
+			viewport.classList.add('opacity-on')
+			setTimeout(() => {
+			const prevSlides = [shuffled[0], shuffled[1], shuffled[2]];
+			viewport.innerHTML = '';
+			prevSlides.forEach(slide => {
+				const slideCard = createCard(slide);
+				viewport.append(slideCard);
+			})
+			}, 200);
+			setTimeout(() => {
+				viewport.classList.remove('opacity-on')
+			}, 500);
+			if (i !== 0) i--;
 		};
 	})
 }

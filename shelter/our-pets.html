@@ -9,6 +9,9 @@
 	<title>Our pets</title>
 </head>
 <body>
+	<div id="modal-pagination" class="modal">
+		
+	</div>
 	<div class="wrapper">
 		<div class="wrapper__container">
 			<header class="header">
@@ -33,7 +36,7 @@
 		</div>
 		<section class="friends">
 			<div class="friends__container">
-				<div class="friends__body">
+				<div id="friends-pagination" class="friends__body">
 					<h1 class="friends__title title">Our friends who <br>are looking for a house</h1>
 					<div class="friends__row">
 						<div class="friends__item item-slider">
@@ -111,11 +114,11 @@
 					</div>
 					<div class="friends__actions paginator">
 						<div class="paginator__body">
-							<div class="paginator__item unactive">&lt;&lt;</div>
-							<div class="paginator__item unactive">&lt;</div>
-							<div class="paginator__item active">1</div>
-							<div class="paginator__item">&gt;</div>
-							<div class="paginator__item">&gt;&gt;</div>
+							<div class="paginator__start paginator__item unactive">&lt;&lt;</div>
+							<div class="paginator__back paginator__item unactive">&lt;</div>
+							<div class="paginator__indicator paginator__item active">1</div>
+							<div class="paginator__next paginator__item">&gt;</div>
+							<div class="paginator__end paginator__item">&gt;&gt;</div>
 						</div>
 					</div>
 				</div>
@@ -156,5 +159,6 @@
 		</footer>
 	</div>
 	<script src="./js/burger.js"></script>
+	<script src="./js/pagination.js"></script>
 </body>
 </html>
