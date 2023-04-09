@@ -22,6 +22,7 @@ body {
 	min-width: $minWidth + px;
 }
 body {
+	overflow: auto;
 	color: $mainColor;
 	line-height: 1;
 	font-family: $fontFamily;
@@ -36,7 +37,7 @@ body {
 		content: '';
 		position: absolute;
 		top: 0;
-		right: -100%;
+		left: -100%;
 		width: 100vw;
 		height: 100vh;
 		background-color: rgba(41, 41, 41, 0.6);
@@ -46,17 +47,15 @@ body {
 }
 body._lock {
 	overflow: hidden;
-	touch-action: none;
 	position: relative;
 	&::before {
 		content: '';
-		right: 0;
+		left: 0;
 		opacity: 1;
 	}
 }
 body._locked {
 	overflow: hidden;
-	touch-action: none;
 	position: relative;
 }
 input,

@@ -201,8 +201,6 @@ function initPaginator () {
 		buttonStart.classList.add('unactive');
 		buttonEnd.classList.remove('unactive');
 		buttonNext.classList.remove('unactive');
-		console.log(`INIT, i=${i}, pages=${pages}`)
-
 		// обработка кнопок и индикатора 
 		controls.addEventListener('click', clickHandler);
 		isListen = true;
@@ -211,7 +209,6 @@ function initPaginator () {
 
 function clickHandler (e) {
 	if (e.target.closest('.paginator__item')) {
-		console.log(`CLICK, i=${i}, pages=${pages}`)
 		if (e.target.closest('.paginator__next')) {
 			if (i>=pages) {
 				return;}
@@ -264,7 +261,6 @@ function clickHandler (e) {
 }
 
 function renderPage (items, perPage, page) {
-	console.log('RENDER')
 	paginatorRenderedOnWidth = window.innerWidth;
 	container.innerHTML = '';
 	const currentPageCards = items.slice((page - 1) * perPage, page * perPage)

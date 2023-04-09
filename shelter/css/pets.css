@@ -29,6 +29,7 @@ body {
 }
 
 body {
+  overflow: auto;
   color: #4c4c4c;
   line-height: 1;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -43,7 +44,7 @@ body::before {
   content: "";
   position: absolute;
   top: 0;
-  right: -100%;
+  left: -100%;
   width: 100vw;
   height: 100vh;
   background-color: rgba(41, 41, 41, 0.6);
@@ -54,20 +55,16 @@ body::before {
 
 body._lock {
   overflow: hidden;
-  -ms-touch-action: none;
-      touch-action: none;
   position: relative;
 }
 body._lock::before {
   content: "";
-  right: 0;
+  left: 0;
   opacity: 1;
 }
 
 body._locked {
   overflow: hidden;
-  -ms-touch-action: none;
-      touch-action: none;
   position: relative;
 }
 
@@ -297,15 +294,15 @@ h6 {
 .modal {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  left: -100%;
+  width: 100vw;
+  height: 100vh;
   background: rgba(41, 41, 41, 0.6);
   z-index: 10;
   opacity: 0;
+  visibility: hidden;
   -webkit-transition: opacity 300ms ease-in;
   transition: opacity 300ms ease-in;
-  pointer-events: none;
 }
 .modal__close {
   cursor: pointer;
@@ -476,8 +473,9 @@ h6 {
 
 .modal-active {
   opacity: 1;
+  left: 0;
+  visibility: visible;
   pointer-events: auto;
-  overflow-y: auto;
 }
 
 .header {
