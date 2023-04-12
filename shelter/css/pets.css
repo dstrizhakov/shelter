@@ -311,7 +311,7 @@ h6 {
   right: -50px;
   width: 52px;
   height: 52px;
-  border: 2px solid #F1CDB3;
+  border: 2px solid #f1cdb3;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,6 +323,11 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 99;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.modal__close:hover {
+  background-color: #f1cdb3;
 }
 @media (max-width: 47.99875em) {
   .modal__close {
@@ -356,7 +361,7 @@ h6 {
           flex: 0 0 500px;
   overflow: hidden;
   position: relative;
-  border-radius: 9px;
+  border-radius: 9px 0 0 9px;
   overflow: hidden;
 }
 @media (max-width: 61.99875em) {
@@ -364,6 +369,8 @@ h6 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 350px;
             flex: 0 0 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (max-width: 47.99875em) {
@@ -376,7 +383,10 @@ h6 {
 }
 @media (max-width: 61.99875em) {
   .modal__img img {
-    min-height: 350px;
+    max-width: 350px;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .modal__content {
@@ -395,9 +405,9 @@ h6 {
 }
 @media (max-width: 61.99875em) {
   .modal__content {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 260px;
-            flex: 1 1 260px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 260px;
+            flex: 0 0 260px;
     min-width: 260px;
     padding-right: 10px;
   }
@@ -405,7 +415,7 @@ h6 {
 @media (max-width: 47.99875em) {
   .modal__content {
     padding: 10px;
-    min-width: 240px;
+    width: 240px;
   }
 }
 .modal__content h3 {
@@ -466,7 +476,7 @@ h6 {
   padding-right: 3px;
 }
 .modal__content ul li::before {
-  color: #F1CDB3;
+  color: #f1cdb3;
   content: "•";
   padding-right: 10px;
 }
